@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-11-23T20:21:43 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="bb3691e4-962a-4136-a6da-1361a079e93f">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#FFA500">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#FFE9BF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TH" mode="Opaque" backcolor="#FFA500">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_CH" mode="Opaque" backcolor="#FFE9BF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Dataset1" whenResourceMissingType="Empty" uuid="f1a0add1-c35c-4fe6-8474-4c2d445d9a97">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+		<queryString language="SQL">
+			<![CDATA[select *from FOURNISSUER]]>
+		</queryString>
+		<field name="NUMF" class="java.math.BigDecimal"/>
+		<field name="NOMF" class="java.lang.String"/>
+		<field name="ADR" class="java.lang.String"/>
+		<field name="CODEP" class="java.lang.String"/>
+		<field name="VILLE" class="java.lang.String"/>
+		<field name="PAYS" class="java.lang.String"/>
+		<field name="TELE" class="java.math.BigDecimal"/>
+		<field name="FAX" class="java.math.BigDecimal"/>
+		<field name="EMAIL" class="java.lang.String"/>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[select * from UTILISATEUR]]>
+	</queryString>
+	<field name="IDUTIL" class="java.math.BigDecimal"/>
+	<field name="LOGIN" class="java.lang.String"/>
+	<field name="MOT_PASS" class="java.lang.String"/>
+	<field name="CIN" class="java.math.BigDecimal"/>
+	<field name="NOM" class="java.lang.String"/>
+	<field name="PRENOM" class="java.lang.String"/>
+	<field name="DATE_NAIS" class="java.lang.String"/>
+	<field name="STATUE" class="java.lang.String"/>
+	<field name="SEXE" class="java.lang.String"/>
+	<title>
+		<band height="480" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="553" height="40" uuid="cb5bb9b8-14c0-4816-88b7-dcd8e1d37db4"/>
+				<box padding="2">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lucida Calligraphy" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LA République Tunusienne ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="-6" y="197" width="553" height="20" backcolor="#EDE4E4" uuid="df4451d6-a19d-48e1-88dc-e69a5df841f0"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lucida Calligraphy" size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[La liste des Fournisseurs du Systeme de stock]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="0" y="280" width="553" height="200" uuid="8f87a8fd-bf89-42aa-9c1f-3df34c2f5d46">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 1_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 1_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table 1_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset1" uuid="3880a13f-0b21-46d0-a150-93139dd7af29">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="75" uuid="4fb68e4f-b9ad-4c62-9149-8193aa9e2299">
+						<jr:tableHeader style="Table 1_TH" height="30"/>
+						<jr:tableFooter style="Table 1_TH" height="30"/>
+						<jr:columnHeader style="Table 1_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="75" height="30" uuid="6483bfc7-c44e-4721-8f07-6385fd2978e1"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Sitka Text"/>
+								</textElement>
+								<text><![CDATA[Nm du Fournisseur]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table 1_CH" height="30"/>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="75" height="30" uuid="ab6115ce-c4f5-4114-ba26-06c9ac425d58"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Sitka Text"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{NOMF}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100" uuid="8543db92-28ad-4769-84a9-c50b6bf18476">
+						<jr:tableHeader style="Table 1_TH" height="30"/>
+						<jr:tableFooter style="Table 1_TH" height="30"/>
+						<jr:columnHeader style="Table 1_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="30" uuid="37aaef8f-c5b7-40ff-b719-8e1edf459dfc"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Sitka Text"/>
+								</textElement>
+								<text><![CDATA[Adresse]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table 1_CH" height="30"/>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="30" uuid="7902529f-05b0-42a8-9c28-cc46e86174ec"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Sitka Text"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{ADR}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="55" uuid="f74687d0-b098-4f09-9120-f58f3f24fa89">
+						<jr:tableHeader style="Table 1_TH" height="30"/>
+						<jr:tableFooter style="Table 1_TH" height="30"/>
+						<jr:columnHeader style="Table 1_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="55" height="30" uuid="a59f6c2c-48b3-4211-99e4-4958864fbd77"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Sitka Text"/>
+								</textElement>
+								<text><![CDATA[Code Postal]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table 1_CH" height="30"/>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="55" height="30" uuid="99f79249-3890-4677-af5c-ff1a77ae05b7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Sitka Text"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{CODEP}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="38c326d2-4124-4ef7-89c6-a77dbc9371b8">
+						<jr:tableHeader style="Table 1_TH" height="30"/>
+						<jr:tableFooter style="Table 1_TH" height="30"/>
+						<jr:columnHeader style="Table 1_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="60" height="30" uuid="44a3828e-eccb-4840-96ef-fb985ff6e4de"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Sitka Text"/>
+								</textElement>
+								<text><![CDATA[Ville]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table 1_CH" height="30"/>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="60" height="30" uuid="28911833-3528-4e4e-84f0-8e05be0db1c7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Sitka Text"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{VILLE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="3ffe0e9b-364a-4347-bd12-6875f34303e3">
+						<jr:tableHeader style="Table 1_TH" height="30"/>
+						<jr:tableFooter style="Table 1_TH" height="30"/>
+						<jr:columnHeader style="Table 1_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="30" uuid="156fa921-89d0-450e-9a6d-cad7cb172f0e"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Sitka Text"/>
+								</textElement>
+								<text><![CDATA[Pays]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table 1_CH" height="30"/>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="40" height="30" uuid="1cb12bfd-78bb-45e2-88ac-e1f3842a9bd7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Sitka Text"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{PAYS}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="1009540d-db71-457d-af59-de6e3759c67a">
+						<jr:tableHeader style="Table 1_TH" height="30"/>
+						<jr:tableFooter style="Table 1_TH" height="30"/>
+						<jr:columnHeader style="Table 1_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="50" height="30" uuid="3269ca06-6631-4af4-aef7-ff02d42849f9"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Sitka Text"/>
+								</textElement>
+								<text><![CDATA[Tel]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table 1_CH" height="30"/>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="30" uuid="99f32bbe-aca4-42fe-9146-7c116104f2be"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Sitka Text"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{TELE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="4196d74f-fb75-4d82-87ea-1f96edbebfac">
+						<jr:tableHeader style="Table 1_TH" height="30"/>
+						<jr:tableFooter style="Table 1_TH" height="30"/>
+						<jr:columnHeader style="Table 1_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="60" height="30" uuid="f716e7d4-aea5-40e5-ae46-75efb0a3587c"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Sitka Text"/>
+								</textElement>
+								<text><![CDATA[Fax]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table 1_CH" height="30"/>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="60" height="30" uuid="9cdf595a-8f96-4fea-ad5c-974b2d8c06fc"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Sitka Text"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{FAX}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="113" uuid="b1ab85bd-81e3-4de9-bccc-5595ec2999b4">
+						<jr:tableHeader style="Table 1_TH" height="30"/>
+						<jr:tableFooter style="Table 1_TH" height="30"/>
+						<jr:columnHeader style="Table 1_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="113" height="30" uuid="02116251-0eba-4b10-9636-06c058a98bda"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Sitka Text"/>
+								</textElement>
+								<text><![CDATA[Email]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table 1_CH" height="30"/>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="113" height="30" uuid="78bf6678-dbf8-4c0a-b4e5-ab025cacc9d7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Sitka Text"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{EMAIL}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="45" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+		</band>
+	</pageHeader>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="36" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<textField pattern="dd - MMMM - yyyy   HH:mm:ss">
+				<reportElement x="-6" y="0" width="186" height="30" uuid="78ef3f2d-b957-431e-b6df-2c8b0dc12693"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="200" height="30" uuid="5428dae6-f6d1-4f67-8144-1860327ab8c9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
